@@ -31,26 +31,33 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // 2. Active Link Scroll Highlighter
-  const sections = document.querySelectorAll('section, header, footer');
+  const sections = document.querySelectorAll('section[id], header[id], footer[id]');
   const navLinks = document.querySelectorAll('.nav-link');
 
-  window.addEventListener('scroll', () => {
-    let current = '';
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop - 120;
-      const sectionHeight = section.clientHeight;
-      if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
-        current = section.getAttribute('id');
-      }
-    });
+  if (sections.length > 0 && navLinks.length > 0) {
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 140;
+        const sectionHeight = section.clientHeight;
+        if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+          current = section.getAttribute('id');
+        }
+      });
 
-    navLinks.forEach(link => {
-      link.classList.remove('active');
-      if (link.getAttribute('href') === `#${current}`) {
-        link.classList.add('active');
+      if (current) {
+        navLinks.forEach(link => {
+          const href = link.getAttribute('href');
+          if (href) {
+            if (href === `#${current}` || href.endsWith(`#${current}`)) {
+              navLinks.forEach(l => l.classList.remove('active'));
+              link.classList.add('active');
+            }
+          }
+        });
       }
     });
-  });
+  }
 
   // 3. Stats Number Counter Animation
   const statNumbers = document.querySelectorAll('.stat-number');
