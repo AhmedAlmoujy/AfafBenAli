@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>د. عفاف بن علي | دكتورة وباحثة في علم النفس الإيجابي</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="منصة متخصصة في الصحة النفسية وتطوير الذات، تساعدك على الوصول للتوازن والراحة النفسية مع د. عفاف بن علي.">
+  <meta name="keywords" content="عفاف بن علي, علم النفس الإيجابي, تطوير الذات, كوتش معتمد, الصحة النفسية, رحلتك نحو السعادة">
+  <meta name="author" content="د. عفاف بن علي">
+  
+  <!-- Google Fonts: IBM Plex Sans Arabic + Alexandria + Cairo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Alexandria:wght@400;600;700;800&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="index.css?v=4">
+</head>
+<body>
+
+  <!-- ==================== SITE HEADER / NAVBAR ==================== -->
+  <header class="site-header" id="header">
+    <div class="container">
+      <nav class="navbar">
+        
+        <!-- Logo -->
+        <a href="#home" class="brand-logo" id="brandLogo">
+          <img src="assets/logo.png" alt="د. عفاف بن علي - Dr. Afaf Ben Ali">
+        </a>
+
+        <!-- Navigation Links matching Figma -->
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#home" class="nav-link active">الرئيسية</a></li>
+          <li><a href="challenge.html" class="nav-link">التحدي</a></li>
+          <li><a href="#contact" class="nav-link">تواصل معنا</a></li>
+          <li><a href="#about" class="nav-link">نبذة عنا</a></li>
+          <li><a href="#blog" class="nav-link">المدونة</a></li>
+          <li><a href="#contact" class="nav-link">اتصل بنا</a></li>
+        </ul>
+
+        <!-- Header CTA Button -->
+        <div class="nav-cta">
+          <a href="challenge.html" class="btn-pink-pill" id="headerCtaBtn">ابدأ التحدي</a>
+        </div>
+
+        <!-- Mobile Toggle Button -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="القائمة">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section class="hero-section" id="home">
+    <div class="container hero-container">
+
+      <!-- Mobile-only full width visual -->
+      <div class="hero-mobile-visual">
+        <img src="assets/images/hero_person_mobile_blended.png" alt="د. عفاف بن علي" class="hero-mobile-img">
+      </div>
+
+      <!-- Text & Buttons Positioned on the LEFT (like Figma & PDF design) -->
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <div class="hero-title-line pink-title">رحلتك</div>
+          <div class="hero-title-line pink-title">نحو السعادة</div>
+          <div class="hero-title-line dark-title">
+            تبدأ من هنـــــــــا
+            <span class="title-underline"></span>
+          </div>
+        </h1>
+
+        <div class="hero-buttons">
+          <!-- Button 1 (Right in RTL): Solid Pink -->
+          <a href="challenge.html" class="btn-hero-fill" id="heroStartBtn">ابدأ التحدي</a>
+          <!-- Button 2 (Left in RTL): Outline Pink -->
+          <a href="#book" class="btn-hero-outline" id="heroBookBtn">احجز جلسة</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== STATS COUNTER BAR ==================== -->
+  <section class="stats-section" id="stats">
+    <div class="container">
+      <div class="stats-card">
+        
+        <!-- Stat Item 1 -->
+        <div class="stat-item">
+          <div class="stat-number" data-target="7000">+7000</div>
+          <div class="stat-label">مشترك في الدورات المدفوعة</div>
+        </div>
+
+        <!-- Stat Item 2 -->
+        <div class="stat-item">
+          <div class="stat-number" data-target="16">+16</div>
+          <div class="stat-label">سنة خبرة</div>
+        </div>
+
+        <!-- Stat Item 3 -->
+        <div class="stat-item">
+          <div class="stat-number" data-target="1000000">+1M</div>
+          <div class="stat-label">متابع علي مواقع التواصل الاجتماعي</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT & CREDENTIALS SECTION ==================== -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        
+        <!-- Right Side (RTL): Title, Credentials & 4 Topic Badges -->
+        <div class="about-content">
+          <h2 class="about-title">
+            دكتورة وباحثة
+            <span class="pink-text">في علم النفس الإيجابي</span>
+          </h2>
+
+          <!-- Credentials List -->
+          <ul class="credentials-list">
+            <li class="credential-item">
+              <span class="credential-icon"><i class="fa-solid fa-brain"></i></span>
+              <span>كوتش معتمد</span>
+            </li>
+            <li class="credential-item">
+              <span class="credential-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+              <span>مدربة دولية</span>
+            </li>
+            <li class="credential-item">
+              <span class="credential-icon"><i class="fa-solid fa-heart-pulse"></i></span>
+              <span>أخصائية سعادة وجودة حياة</span>
+            </li>
+          </ul>
+
+          <!-- Topic Pill Badges Row (4 Items) -->
+          <div class="topics-row">
+            <div class="topic-badge-item">
+              <div class="topic-circle"><i class="fa-solid fa-spa"></i></div>
+              <span class="topic-title">تطوير الذات</span>
+            </div>
+
+            <div class="topic-badge-item">
+              <div class="topic-circle"><i class="fa-solid fa-face-smile"></i></div>
+              <span class="topic-title">السعادة</span>
+            </div>
+
+            <div class="topic-badge-item">
+              <div class="topic-circle"><i class="fa-solid fa-hand-holding-heart"></i></div>
+              <span class="topic-title">الصحة النفسية</span>
+            </div>
+
+            <div class="topic-badge-item">
+              <div class="topic-circle"><i class="fa-solid fa-moon"></i></div>
+              <span class="topic-title">اليقين بالله</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Left Side (RTL): Sitting Person Photo on Armchair -->
+        <div class="about-visual">
+          <img src="assets/images/about_person.png" alt="دكتورة وباحثة في علم النفس الإيجابي" class="about-person-img" id="aboutPersonImg">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER SECTION ==================== -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Col 1: Brand & Bio -->
+        <div class="footer-brand">
+          <img src="assets/logo.png" alt="د. عفاف بن علي" class="footer-logo">
+          <p class="footer-desc">
+            منصة متخصصة في الصحة النفسية وتطوير الذات، تساعدك على الوصول للتوازن والراحة النفسية من خلال جلسات وإرشادات بأسلوب هادئ وآمن. نؤمن أن الرحلة نحو السلام الداخلي تبدأ بخطوة بسيطة نحو فهم نفسك بشكل أعمق.
+          </p>
+
+          <!-- Social Links -->
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Useful Links -->
+        <div class="footer-column">
+          <h3 class="footer-heading">روابط مفيدة</h3>
+          <ul class="footer-menu">
+            <li><a href="#home">الصفحة الرئيسية</a></li>
+            <li><a href="#challenge">صفحة التحدي</a></li>
+            <li><a href="#contact">تواصل معنا</a></li>
+            <li><a href="#about">نبذة عنا</a></li>
+            <li><a href="#blog">المدونة</a></li>
+            <li><a href="#contact">اتصل بنا</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Quick Links -->
+        <div class="footer-column">
+          <h3 class="footer-heading">روابط سريعة</h3>
+          <ul class="footer-menu">
+            <li><a href="#privacy">سياسة الخصوصية</a></li>
+            <li><a href="#terms">الشروط والأحكام</a></li>
+            <li><a href="#contact">اتصل بنا</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Newsletter Box -->
+        <div class="footer-column">
+          <h3 class="footer-heading">النشرة البريدية</h3>
+          <p class="newsletter-text">
+            اشترك في نشرتنا البريدية للحصول علي آخر العروض والمنتجات الجديدة
+          </p>
+          
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" placeholder="البريد الإلكتروني" class="input-pill" required id="newsletterInput">
+            <button type="submit" class="btn-sub" id="newsletterSubmitBtn">اشتراك</button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar & Payment Badges -->
+      <div class="footer-bottom">
+        <div class="copyright">
+          جميع الحقوق محفوظة @ لـ د.عفاف بن علي
+        </div>
+
+        <div class="payment-badges">
+          <img src="assets/images/payment_badges.png" alt="وسائل الدفع: تابي، تمارا، مدى، السجل التجاري" class="payment-img">
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==================== FLOATING WHATSAPP BUTTON ==================== -->
+  <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="تواصل عبر واتساب" id="whatsappBtn">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Core Javascript -->
+  <script src="app.js"></script>
+
+</body>
+</html>

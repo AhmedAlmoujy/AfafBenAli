@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الاختبار النفسي: من أين أبدأ؟ | د. عفاف بن علي</title>
+  <meta name="description" content="الاختبار النفسي: مرآة صادقة تساعدكِ على اكتشاف أولوياتكِ وتحديد أي جانب من جوانب حياتكِ يحتاج إلى اهتمامكِ الآن لتبدئي رحلة استعادة بريقكِ وقوتكِ.">
+
+  <!-- Google Fonts: IBM Plex Sans Arabic + Cairo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Main Website Styles & Challenge Specific Styles -->
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="challenge.css">
+</head>
+<body class="challenge-body">
+
+  <!-- ==================== HEADER / NAVBAR ==================== -->
+  <header class="header" id="header">
+    <div class="container">
+      <nav class="navbar">
+        
+        <!-- Logo -->
+        <a href="index.html" class="brand-logo" id="brandLogo">
+          <img src="assets/logo.png" alt="د. عفاف بن علي - Dr. Afaf Ben Ali">
+        </a>
+
+        <!-- Desktop Navigation Menu -->
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html#home" class="nav-link">الرئيسية</a></li>
+          <li><a href="challenge.html" class="nav-link active">التحدي</a></li>
+          <li><a href="index.html#about" class="nav-link">نبذة عنا</a></li>
+          <li><a href="index.html#courses" class="nav-link">الدورات</a></li>
+          <li><a href="index.html#blog" class="nav-link">المدونة</a></li>
+          <li><a href="index.html#contact" class="nav-link">اتصل بنا</a></li>
+        </ul>
+
+        <!-- Header CTA Button -->
+        <div class="nav-cta">
+          <a href="#assessmentSection" class="btn-pink-pill" id="headerCtaBtn">ابدأ التحدي</a>
+        </div>
+
+        <!-- Mobile Toggle Button -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="القائمة">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==================== MAIN CONTENT ==================== -->
+  <main class="challenge-main">
+    <div class="container">
+
+      <!-- HERO / INTRO SECTION -->
+      <section class="challenge-hero">
+        <div class="challenge-badge-wrap">
+          <span class="challenge-badge-icon"><i class="fa-solid fa-sparkles"></i></span>
+          <span class="challenge-badge-text">تحدي استعادة البوصلة والبريق الداخلي</span>
+        </div>
+
+        <div class="challenge-title-row">
+          <div class="challenge-title-emblem"><i class="fa-solid fa-compass"></i></div>
+          <h1 class="challenge-h1">الاختبار النفسي: من أين أبدأ؟</h1>
+          <div class="challenge-title-emblem"><i class="fa-solid fa-heart"></i></div>
+        </div>
+
+        <p class="challenge-subtitle">
+          مرآة صادقة تساعدكِ على اكتشاف أولوياتكِ الحقيقية، وتحديد الجانب الأكثر احتياجاً لاهتمامكِ وطاقتكِ الآن.
+        </p>
+
+        <!-- Empathetic Orientation Box (From PDF) -->
+        <div class="challenge-intro-box">
+          <p>
+            هل تشعرين أحياناً بأنكِ <strong>ضائعة البوصلة</strong>، لا تعرفين من أين تبدئين رحلة استعادة بريقكِ وقوتكِ؟ 
+            هذا الاختبار صُمم خصيصاً لكِ. إنه <strong>ليس حكماً</strong>، بل هو مرآة صادقة تساعدكِ على تحديد أي جانب من جوانب حياتكِ يحتاج إلى اهتمامكِ وطاقتكِ الآن.
+          </p>
+          <p style="margin-top: 12px;">
+            خذي وقتكِ للإجابة <strong>بصدق وعمق</strong>. لا توجد إجابات صحيحة أو خاطئة، فقط إجابات تعكس حقيقتكِ اليوم. بعد الانتهاء، ستحصلين على <strong>نتائج واضحة، ونصائح عملية، وخطة أولية</strong> لتبدئي رحلة التحول بثقة.
+          </p>
+          <p style="margin-top: 12px; margin-bottom: 0; font-weight: 600; color: var(--primary-pink);">
+            كيف تجيبين؟ لكل عبارة، اختاري الخيار الذي يعبر عنكِ بشكل أفضل في معظم الأوقات.
+          </p>
+        </div>
+
+        <!-- PROGRESS TRACKER CARD -->
+        <div class="progress-card">
+          <div class="progress-info">
+            <span class="progress-label">
+              <i class="fa-solid fa-list-check"></i>
+              <span id="progressCount">0 من 15 عبارة مكتملة</span>
+            </span>
+            <span class="progress-percent" id="progressText">0%</span>
+          </div>
+          <div class="progress-bar-bg">
+            <div class="progress-bar-fill" id="progressBarFill"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ASSESSMENT QUESTIONS SECTION -->
+      <section class="assessment-section" id="assessmentSection">
+
+        <!-- ==================== المحور الأول ==================== -->
+        <div class="pillar-section" id="pillar1Section">
+          <div class="pillar-header">
+            <div class="pillar-title-group">
+              <div class="pillar-icon-badge"><i class="fa-solid fa-hands-praying"></i></div>
+              <div>
+                <h2 class="pillar-title">المحور الأول: السكينة الروحية والاتصال بالله</h2>
+                <span style="font-size: 0.95rem; color: #666;">العبارات من 1 إلى 5</span>
+              </div>
+            </div>
+            <span class="pillar-tag">5 عبارات</span>
+          </div>
+
+          <!-- Q1 -->
+          <div class="question-card" id="qCard1">
+            <div class="question-top">
+              <div class="question-number">1</div>
+              <h3 class="question-text">عندما تواجهين تحدياً كبيراً، هل يكون لجوءكِ الأول والأعمق إلى الله، أم تبحثين عن حلول بشرية أولاً؟</h3>
+            </div>
+            <div class="options-grid">
+              <button type="button" class="option-btn" data-q="1" data-score="5"><i class="fa-solid fa-check"></i>دائماً</button>
+              <button type="button" class="option-btn" data-q="1" data-score="4"><i class="fa-solid fa-check"></i>غالباً</button>
+              <button type="button" class="option-btn" data-q="1" data-score="3"><i class="fa-solid fa-check"></i>أحياناً</button>
+              <button type="button" class="option-btn" data-q="1" data-score="2"><i class="fa-solid fa-check"></i>نادراً</button>
+              <button type="button" class="option-btn" data-q="1" data-score="1"><i class="fa-solid fa-check"></i>أبداً</button>
+            </div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="question-card" id="qCard2">
+            <div class="question-top">
+              <div class="question-number">2</div>
+              <h3 class="question-text">هل تشعرين أن صلاتكِ أو عباداتكِ هي لحظة اتصال حقيقي وراحة عميقة، لا مجرد واجب تؤدينه؟</h3>
+            </div>
+            <div class="options-grid">
+              <button type="button" class="option-btn" data-q="2" data-score="5"><i class="fa-solid fa-check"></i>دائماً</button>
+              <button type="button" class="option-btn" data-q="2" data-score="4"><i class="fa-solid fa-check"></i>غالباً</button>
+              <button type="button" class="option-btn" data-q="2" data-score="3"><i class="fa-solid fa-check"></i>أحياناً</button>
+              <button type="button" class="option-btn" data-q="2" data-score="2"><i class="fa-solid fa-check"></i>نادراً</button>
+              <button type="button" class="option-btn" data-q="2" data-score="1"><i class="fa-solid fa-check"></i>أبداً</button>
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="question-card" id="qCard3">
+            <div class="question-top">
+              <div class="question-number">3</div>
+              <h3 class="question-text">كم مرة في الأسبوع تشعرين بسلام داخلي ويقين بأن الله يدبر أمركِ، حتى في خضم الفوضى؟</h3>
+            </div>
+            <div class="options-grid">
+              <button type="button" class="option-btn" data-q="3" data-score="5"><i class="fa-solid fa-check"></i>دائماً</button>
+              <button type="button" class="option-btn" data-q="3" data-score="4"><i class="fa-solid fa-check"></i>غالباً</button>
+              <button type="button" class="option-btn" data-q="3" data-score="3"><i class="fa-solid fa-check"></i>أحياناً</button>
+              <button type="button" class="option-btn" data-q="3" data-score="2"><i class="fa-solid fa-check"></i>نادراً</button>
+              <button type="button" class="option-btn" data-q="3" data-score="1"><i class="fa-solid fa-check"></i>أبداً</button>
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="question-card" id="qCard4">
+            <div class="question-top">
+              <div class="question-number">4</div>
+              <h3 class="question-text">هل تجدين صعوبة في التحرر من التعلق بشخص أو شيء في حياتكِ، حتى لو كان ذلك يسبب لكِ الألم؟</h3>
+            </div>
+            <div class="options-grid">
+              <button type="button" class="option-btn" data-q="4" data-score="5"><i class="fa-solid fa-check"></i>أبداً</button>
+              <button type="button" class="option-btn" data-q="4" data-score="4"><i class="fa-solid fa-check"></i>نادراً</button>
+              <button type="button" class="option-btn" data-q="4" data-score="3"><i class="fa-solid fa-check"></i>أحياناً</button>
+              <button type="button" class="option-btn" data-q="4" data-score="2"><i class="fa-solid fa-check"></i>غالباً</button>
+              <button type="button" class="option-btn" data-q="4" data-score="1"><i class="fa-solid fa-check"></i>دائماً</button>
+            </div>
+          </div>
+
+          <!-- Q5 -->
+          <div class="question-card" id="qCard5">
+            <div class="question-top">
+              <div class="question-number">5</div>
+              <h3 class="question-text">هل ينتابكِ شعور عميق بالامتنان والشكر لله على النعم الصغيرة والكبيرة في حياتكِ؟</h3>
+            </div>
+            <div class="options-grid">
+              <button type="button" class="option-btn" data-q="5" data-score="5"><i class="fa-solid fa-check"></i>دائماً</button>
+              <button type="button" class="option-btn" data-q="5" data-score="4"><i class="fa-solid fa-check"></i>غالباً</button>
+              <button type="button" class="option-btn" data-q="5" data-score="3"><i class="fa-solid fa-check"></i>أحياناً</button>
+              <button type="button" class="option-btn" data-q="5" data-score="2"><i class="fa-solid fa-check"></i>نادراً</button>
+              <button type="button" class="option-btn" data-q="5" data-score="1"><i class="fa-solid fa-check"></i>أبداً</button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ==================== المحور الثاني ==================== -->
+        <div class="pillar-section" id="pillar2Section">
+          <div class="pillar-header">
+            <div class="pillar-title-group">
+              <div class="pillar-icon-badge"><i class="fa-solid fa-heart-pulse"></i></div>
+              <div>
+                <h2 class="pillar-title">المحور الثاني: الجسد، المظهر، والعناية الذاتية</h2>
+                <span style="font-size: 0.95rem; color: #666;">العبارات من 6 إلى 10</span>
+              </div>
+            </div>
+            <span class="pillar-tag">5 عبارات</span>
+          </div>
+
+          <!-- Q6 -->
+          <div class="question-card" id="qCard6">
+            <div class="question-top">
+              <div class="question-number">6</div>
+              <h3 class="question-text">عندما تنظرين في المرآة، ما هي المشاعر الغالبة التي تنتابكِ تجاه جسدكِ ومظهركِ؟</h3>
+            </div>
+            <div class="options-grid" style="grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));">
+              <button type="button" class="option-btn" data-q="6" data-score="5"><i class="fa-solid fa-check"></i>حب وتقبل</button>
+              <button type="button" class="option-btn" data-q="6" data-score="4"><i class="fa-solid fa-check"></i>رضا مع بعض التحفظات</button>
+              <button type="button" class="option-btn" data-q="6" data-score="3"><i class="fa-solid fa-check"></i>نقد وإحباط</button>
+              <button type="button" class="option-btn" data-q="6" data-score="2"><i class="fa-solid fa-check"></i>خيبة أمل</button>
+              <button type="button" class="option-btn" data-q="6" data-score="1"><i class="fa-solid fa-check"></i>سخط وعدم تقبل</button>
+            </div>
+          </div>
+
+          <!-- Q7 -->
+          <div class="question-card" id="qCard7">
+            <div class="question-top">
+              <div class="question-number">7</div>
+              <h3 class="question-text">كم مرة في الأسبوع تخصصين وقتاً للعناية بنفسكِ جسدياً (رياضة، استرخاء، تغذية واعية) بدافع الحب لا الواجب؟</h3>
+            </div>
+            <div class="options-grid" style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));">
+              <button type="button" class="option-btn" data-q="7" data-score="5"><i class="fa-solid fa-check"></i>دائماً (أكثر من 5 مرات)</button>
+              <button type="button" class="option-btn" data-q="7" data-score="4"><i class="fa-solid fa-check"></i>غالباً (3-4 مرات)</button>
+              <button type="button" class="option-btn" data-q="7" data-score="3"><i class="fa-solid fa-check"></i>أحياناً (1-2 مرة)</button>
+              <button type="button" class="option-btn" data-q="7" data-score="2"><i class="fa-solid fa-check"></i>نادراً</button>
+              <button type="button" class="option-btn" data-q="7" data-score="1"><i class="fa-solid fa-check"></i>أبداً</button>
+            </div>
+          </div>
+
+          <!-- Q8 -->
+          <div class="question-card" id="qCard8">
+            <div class="question-top">
+              <div class="question-number">8</div>
+              <h3 class="question-text">هل تشعرين بمستوى طاقة جسدية كافٍ لإنجاز مهامكِ اليومية والاستمتاع بحياتكِ؟</h3>
+            </div>
+            <div class="options-grid">
+              <button type="button" class="option-btn" data-q="8" data-score="5"><i class="fa-solid fa-check"></i>دائماً</button>
+              <button type="button" class="option-btn" data-q="8" data-score="4"><i class="fa-solid fa-check"></i>غالباً</button>
+              <button type="button" class="option-btn" data-q="8" data-score="3"><i class="fa-solid fa-check"></i>أحياناً</button>
+              <button type="button" class="option-btn" data-q="8" data-score="2"><i class="fa-solid fa-check"></i>نادراً</button>
+              <button type="button" class="option-btn" data-q="8" data-score="1"><i class="fa-solid fa-check"></i>أبداً</button>
+            </div>
+          </div>
+
+          <!-- Q9 -->
+          <div class="question-card" id="qCard9">
+            <div class="question-top">
+              <div class="question-number">9</div>
+              <h3 class="question-text">هل نظامكِ الغذائي يعكس وعياً واهتماماً بصحة جسدكِ، أم أنه غالباً ما يكون عشوائياً أو تحت تأثير التوتر؟</h3>
+            </div>
+            <div class="options-grid">
+              <button type="button" class="option-btn" data-q="9" data-score="5"><i class="fa-solid fa-check"></i>دائماً واعي</button>
+              <button type="button" class="option-btn" data-q="9" data-score="4"><i class="fa-solid fa-check"></i>غالباً واعي</button>
+              <button type="button" class="option-btn" data-q="9" data-score="3"><i class="fa-solid fa-check"></i>أحياناً واعي</button>
+              <button type="button" class="option-btn" data-q="9" data-score="2"><i class="fa-solid fa-check"></i>نادراً واعي</button>
+              <button type="button" class="option-btn" data-q="9" data-score="1"><i class="fa-solid fa-check"></i>أبداً واعي</button>
+            </div>
+          </div>
+
+          <!-- Q10 -->
+          <div class="question-card" id="qCard10">
+            <div class="question-top">
+              <div class="question-number">10</div>
+              <h3 class="question-text">هل يؤثر مظهركِ الخارجي بشكل كبير سلباً على ثقتكِ بنفسكِ وقدرتكِ على التفاعل الاجتماعي؟</h3>
+            </div>
+            <div class="options-grid" style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));">
+              <button type="button" class="option-btn" data-q="10" data-score="5"><i class="fa-solid fa-check"></i>أبداً يؤثر سلباً</button>
+              <button type="button" class="option-btn" data-q="10" data-score="4"><i class="fa-solid fa-check"></i>نادراً يؤثر سلباً</button>
+              <button type="button" class="option-btn" data-q="10" data-score="3"><i class="fa-solid fa-check"></i>أحياناً يؤثر سلباً</button>
+              <button type="button" class="option-btn" data-q="10" data-score="2"><i class="fa-solid fa-check"></i>غالباً يؤثر سلباً</button>
+              <button type="button" class="option-btn" data-q="10" data-score="1"><i class="fa-solid fa-check"></i>دائماً يؤثر سلباً</button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ==================== المحور الثالث ==================== -->
+        <div class="pillar-section" id="pillar3Section">
+          <div class="pillar-header">
+            <div class="pillar-title-group">
+              <div class="pillar-icon-badge"><i class="fa-solid fa-compass"></i></div>
+              <div>
+                <h2 class="pillar-title">المحور الثالث: الأهداف، الطموح، واتخاذ القرار</h2>
+                <span style="font-size: 0.95rem; color: #666;">العبارات من 11 إلى 15</span>
+              </div>
+            </div>
+            <span class="pillar-tag">5 عبارات</span>
+          </div>
+
+          <!-- Q11 -->
+          <div class="question-card" id="qCard11">
+            <div class="question-top">
+              <div class="question-number">11</div>
+              <h3 class="question-text">هل تشعرين بوضوح تام حول الخطوات القادمة لتحقيق هدف رئيسي في حياتكِ خلال الـ 6 أشهر القادمة؟</h3>
+            </div>
+            <div class="options-grid">
+              <button type="button" class="option-btn" data-q="11" data-score="5"><i class="fa-solid fa-check"></i>دائماً واضح</button>
+              <button type="button" class="option-btn" data-q="11" data-score="4"><i class="fa-solid fa-check"></i>غالباً واضح</button>
+              <button type="button" class="option-btn" data-q="11" data-score="3"><i class="fa-solid fa-check"></i>أحياناً واضح</button>
+              <button type="button" class="option-btn" data-q="11" data-score="2"><i class="fa-solid fa-check"></i>نادراً واضح</button>
+              <button type="button" class="option-btn" data-q="11" data-score="1"><i class="fa-solid fa-check"></i>أبداً واضح</button>
+            </div>
+          </div>
+
+          <!-- Q12 -->
+          <div class="question-card" id="qCard12">
+            <div class="question-top">
+              <div class="question-number">12</div>
+              <h3 class="question-text">كم مرة في الشهر تجدين نفسكِ تتراجعين عن بدء مشروع أو هدف مهم بسبب الخوف من الفشل أو حكم الآخرين؟</h3>
+            </div>
+            <div class="options-grid">
+              <button type="button" class="option-btn" data-q="12" data-score="5"><i class="fa-solid fa-check"></i>أبداً</button>
+              <button type="button" class="option-btn" data-q="12" data-score="4"><i class="fa-solid fa-check"></i>نادراً</button>
+              <button type="button" class="option-btn" data-q="12" data-score="3"><i class="fa-solid fa-check"></i>أحياناً</button>
+              <button type="button" class="option-btn" data-q="12" data-score="2"><i class="fa-solid fa-check"></i>غالباً</button>
+              <button type="button" class="option-btn" data-q="12" data-score="1"><i class="fa-solid fa-check"></i>دائماً</button>
+            </div>
+          </div>
+
+          <!-- Q13 -->
+          <div class="question-card" id="qCard13">
+            <div class="question-top">
+              <div class="question-number">13</div>
+              <h3 class="question-text">هل لديكِ شعور عميق بالهدف والمعنى في حياتكِ يوجه قراراتكِ وأفعالكِ؟</h3>
+            </div>
+            <div class="options-grid">
+              <button type="button" class="option-btn" data-q="13" data-score="5"><i class="fa-solid fa-check"></i>دائماً</button>
+              <button type="button" class="option-btn" data-q="13" data-score="4"><i class="fa-solid fa-check"></i>غالباً</button>
+              <button type="button" class="option-btn" data-q="13" data-score="3"><i class="fa-solid fa-check"></i>أحياناً</button>
+              <button type="button" class="option-btn" data-q="13" data-score="2"><i class="fa-solid fa-check"></i>نادراً</button>
+              <button type="button" class="option-btn" data-q="13" data-score="1"><i class="fa-solid fa-check"></i>أبداً</button>
+            </div>
+          </div>
+
+          <!-- Q14 -->
+          <div class="question-card" id="qCard14">
+            <div class="question-top">
+              <div class="question-number">14</div>
+              <h3 class="question-text">هل تجدين سهولة في اتخاذ القرارات المهمة بثقة، أم أنكِ غالباً ما تترددين وتطلبين آراء الآخرين بكثرة؟</h3>
+            </div>
+            <div class="options-grid">
+              <button type="button" class="option-btn" data-q="14" data-score="5"><i class="fa-solid fa-check"></i>دائماً بثقة</button>
+              <button type="button" class="option-btn" data-q="14" data-score="4"><i class="fa-solid fa-check"></i>غالباً بثقة</button>
+              <button type="button" class="option-btn" data-q="14" data-score="3"><i class="fa-solid fa-check"></i>أحياناً بثقة</button>
+              <button type="button" class="option-btn" data-q="14" data-score="2"><i class="fa-solid fa-check"></i>نادراً بثقة</button>
+              <button type="button" class="option-btn" data-q="14" data-score="1"><i class="fa-solid fa-check"></i>أبداً بثقة</button>
+            </div>
+          </div>
+
+          <!-- Q15 -->
+          <div class="question-card" id="qCard15">
+            <div class="question-top">
+              <div class="question-number">15</div>
+              <h3 class="question-text">هل تبادرين لاتخاذ خطوات عملية نحو أحلامكِ، أم أن التسويف غالباً ما يقف حاجزاً أمامكِ؟</h3>
+            </div>
+            <div class="options-grid">
+              <button type="button" class="option-btn" data-q="15" data-score="5"><i class="fa-solid fa-check"></i>دائماً أبادر</button>
+              <button type="button" class="option-btn" data-q="15" data-score="4"><i class="fa-solid fa-check"></i>غالباً أبادر</button>
+              <button type="button" class="option-btn" data-q="15" data-score="3"><i class="fa-solid fa-check"></i>أحياناً أبادر</button>
+              <button type="button" class="option-btn" data-q="15" data-score="2"><i class="fa-solid fa-check"></i>نادراً أبادر</button>
+              <button type="button" class="option-btn" data-q="15" data-score="1"><i class="fa-solid fa-check"></i>أبداً أبادر</button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ==================== SIGNATURE CHALLENGE CARD (From Challenge.pdf) ==================== -->
+        <div class="challenge-cta-card">
+          <span class="sparkle-top">✦</span>
+          <span class="sparkle-bottom">✦</span>
+
+          <h2 class="challenge-cta-title">أكملي التحدي واكتشفي بوصلتكِ النفسية</h2>
+          <p class="challenge-cta-desc">
+            أكملي الإجابة على العبارات الـ 15 لتكشفي عن الجانب الذي يحتاج إلى رعايتكِ واهتمامكِ الأكبر، وتحصلي على نتيجتكِ وخطة عملية فورية.
+          </p>
+
+          <button type="button" class="btn-calculate" id="calculateBtn" disabled>
+            أكملي الإجابات (0/15) لحساب النتيجة
+          </button>
+        </div>
+
+      </section>
+
+      <!-- ==================== DYNAMIC RESULTS SECTION ==================== -->
+      <section class="results-container" id="resultsContainer">
+        
+        <div class="results-card-main">
+          
+          <div class="results-badge-header">
+            <div class="results-star-badge">
+              <i class="fa-solid fa-sparkles"></i>
+              <span>نتيجة التحليل النفسي المخصص لكِ</span>
+            </div>
+          </div>
+
+          <h2 class="results-title">تهانينا على إكمال هذا الاختبار الصادق!</h2>
+          <p class="results-intro-p">
+            شجاعتكِ في مواجهة ذاتكِ هي الخطوة الأولى نحو التحول الحقيقي. لقد كشف هذا الاختبار عن بوصلتكِ الداخلية، وأشار إلى الجانب الذي يحتاج إلى رعايتكِ واهتمامكِ الأكبر الآن.
+          </p>
+
+          <!-- Overall Level Banner -->
+          <div class="level-stage-banner">
+            <div class="level-stage-icon">
+              <i id="stageIcon" class="fa-solid fa-sun"></i>
+            </div>
+            <div class="level-stage-info" style="flex-grow: 1;">
+              <h3 id="stageTitle">مرحلة التوازن والوعي</h3>
+              <p id="stageDesc">مستوى وعيكِ متقدم، وهذه الخطة مصممة خصيصاً لمساعدتكِ على سد الفجوات والانطلاق بثقة.</p>
+            </div>
+            <div class="total-score-badge" style="background: rgba(227, 43, 119, 0.08); border: 2px solid var(--primary-pink); border-radius: 20px; padding: 14px 24px; text-align: center; min-width: 140px; flex-shrink: 0;">
+              <span style="display: block; font-size: 0.9rem; font-weight: 700; color: #555;">المجموع الكلي</span>
+              <span id="totalScoreDisplay" style="display: block; font-size: 1.8rem; font-weight: 800; color: var(--primary-pink); direction: ltr;">-- / 75</span>
+            </div>
+          </div>
+
+          <!-- Pillars Score Cards -->
+          <div class="score-overview-grid">
+            
+            <!-- Pillar 1 Card -->
+            <div class="pillar-score-card" id="pillarCard1">
+              <div class="pillar-score-icon"><i class="fa-solid fa-hands-praying"></i></div>
+              <div class="pillar-score-name">السكينة الروحية والاتصال بالله</div>
+              <div class="pillar-score-num" id="p1ScoreDisplay">-- / 25</div>
+            </div>
+
+            <!-- Pillar 2 Card -->
+            <div class="pillar-score-card" id="pillarCard2">
+              <div class="pillar-score-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+              <div class="pillar-score-name">الجسد، المظهر، والعناية الذاتية</div>
+              <div class="pillar-score-num" id="p2ScoreDisplay">-- / 25</div>
+            </div>
+
+            <!-- Pillar 3 Card -->
+            <div class="pillar-score-card" id="pillarCard3">
+              <div class="pillar-score-icon"><i class="fa-solid fa-compass"></i></div>
+              <div class="pillar-score-name">الأهداف، الطموح، واتخاذ القرار</div>
+              <div class="pillar-score-num" id="p3ScoreDisplay">-- / 25</div>
+            </div>
+
+          </div>
+
+          <!-- Detailed Pillar Diagnosis & Actions Card -->
+          <div class="recommendation-card">
+            <div class="recommendation-header">
+              <i class="fa-solid fa-bullseye"></i>
+              <h3 id="lowestPillarTitle">المحور الذي يحتاج اهتمامكِ الأكبر</h3>
+            </div>
+
+            <p class="recommendation-diagnosis" id="lowestPillarDiagnosis">
+              جاري تحليل البيانات...
+            </p>
+
+            <h4 class="action-steps-title">
+              <i class="fa-solid fa-shoe-prints"></i>
+              <span>خطوات عملية يمكنكِ البدء بها فوراً:</span>
+            </h4>
+
+            <div class="action-steps-grid" id="actionStepsGrid">
+              <!-- Dynamically populated -->
+            </div>
+
+            <!-- How Dr Afaf Helps -->
+            <div class="dr-help-box">
+              <h4>
+                <i class="fa-solid fa-user-doctor"></i>
+                <span>كيف ستساعدكِ د. عفاف في هذا الجانب:</span>
+              </h4>
+              <p id="drAfafHelpText">
+                في «تحدي الحياة الطيبة»، ستتعلمين أدوات عملية متخصصة لاستعادة توازنك الداخلي.
+              </p>
+            </div>
+          </div>
+
+          <!-- FREE CHALLENGE INVITATION (From PDF) -->
+          <div class="free-challenge-invite">
+            <h3>خطوتكِ التالية نحو استعادة بريقكِ</h3>
+            <p>
+              لأننا نؤمن بأن كل امرأة تستحق أن تعيش حياة مليئة بالسكينة والقوة، ندعوكِ للانضمام إلى <strong>«تحدي الحياة الطيبة» المجاني!</strong>
+            </p>
+
+            <ul class="free-challenge-benefits">
+              <li>
+                <i class="fa-solid fa-circle-check"></i>
+                <span>تعزيز الاتصال الروحي مع الله وبناء السلام الداخلي العميق.</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i>
+                <span>تحسين الصحة النفسية والجسدية والتخلص من الأنماط السلبية المرهقة.</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i>
+                <span>اكتشاف الشغف وبناء حياة متوازنة مليئة بالوعي، العلاقات الصحية، والالتزام اليومي بالنمو.</span>
+              </li>
+            </ul>
+
+            <a href="https://wa.me/?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%AF.%20%D8%B9%D9%81%D8%A7%D9%81%D8%8C%20%D8%A3%D9%83%D9%85%D9%84%D8%AA%20%D8%A7%D9%84%D8%A7%D8%AE%D8%AA%D8%A8%D8%A7%D8%B1%20%D8%A7%D9%84%D9%86%D9%81%D8%B3%D9%8A%20%D9%88%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D9%86%D8%B6%D9%85%D8%A7%D9%85%20%D9%84%D8%AA%D8%AD%D8%AF%D9%8A%20%D8%A7%D9%84%D8%AD%D9%8A%D8%A7%D8%A9%20%D8%A7%D9%84%D8%B7%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D9%85%D8%AC%D8%A7%D9%86%D9%8A" target="_blank" class="btn-join-white" id="joinChallengeBtn">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>انضمي إلى التحدي المجاني الآن!</span>
+            </a>
+          </div>
+
+          <!-- Retake Button -->
+          <div class="retake-btn-wrap">
+            <button type="button" class="btn-retake" id="retakeBtn">
+              <i class="fa-solid fa-rotate-right"></i>
+              <span>إعادة الاختبار من جديد</span>
+            </button>
+          </div>
+
+        </div>
+
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ==================== FOOTER SECTION ==================== -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Col 1: Brand & Bio -->
+        <div class="footer-brand">
+          <img src="assets/logo.png" alt="د. عفاف بن علي" class="footer-logo">
+          <p class="footer-desc">
+            منصة متخصصة في الصحة النفسية وتطوير الذات، تساعدك على الوصول للتوازن والراحة النفسية من خلال جلسات وإرشادات بأسلوب هادئ وآمن. نؤمن أن الرحلة نحو السلام الداخلي تبدأ بخطوة بسيطة نحو فهم نفسك بشكل أعمق.
+          </p>
+
+          <!-- Social Links -->
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Useful Links -->
+        <div class="footer-column">
+          <h3 class="footer-heading">روابط مفيدة</h3>
+          <ul class="footer-menu">
+            <li><a href="index.html#home">الصفحة الرئيسية</a></li>
+            <li><a href="challenge.html">صفحة التحدي</a></li>
+            <li><a href="index.html#contact">تواصل معنا</a></li>
+            <li><a href="index.html#about">نبذة عنا</a></li>
+            <li><a href="index.html#blog">المدونة</a></li>
+            <li><a href="index.html#contact">اتصل بنا</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Quick Links -->
+        <div class="footer-column">
+          <h3 class="footer-heading">روابط سريعة</h3>
+          <ul class="footer-menu">
+            <li><a href="#privacy">سياسة الخصوصية</a></li>
+            <li><a href="#terms">الشروط والأحكام</a></li>
+            <li><a href="index.html#contact">اتصل بنا</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Newsletter Box -->
+        <div class="footer-column">
+          <h3 class="footer-heading">النشرة البريدية</h3>
+          <p class="newsletter-text">
+            اشترك في نشرتنا البريدية للحصول علي آخر العروض والمنتجات الجديدة
+          </p>
+          
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" placeholder="البريد الإلكتروني" class="input-pill" required id="newsletterInput">
+            <button type="submit" class="btn-sub" id="newsletterSubmitBtn">اشتراك</button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar & Payment Badges -->
+      <div class="footer-bottom">
+        <div class="copyright">
+          جميع الحقوق محفوظة @ لـ د.عفاف بن علي
+        </div>
+
+        <div class="payment-badges">
+          <img src="assets/images/payment_badges.png" alt="وسائل الدفع: تابي، تمارا، مدى، السجل التجاري" class="payment-img">
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==================== FLOATING WHATSAPP BUTTON ==================== -->
+  <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="تواصل عبر واتساب" id="whatsappBtn">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+  <script src="challenge.js"></script>
+</body>
+</html>
