@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تواصل معنا | د. عفاف بن علي</title>
+
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="تواصل معنا - ابدأ رحلتك نحو السعادة والتوازن النفسي مع د. عفاف بن علي. احجز استشارتك أو أرسل استفسارك الآن."
+    />
+    <meta
+      name="keywords"
+      content="عفاف بن علي, تواصل معنا, استشارات نفسية, كوتشينج, علم النفس الإيجابي, احجز جلسة"
+    />
+    <meta name="author" content="د. عفاف بن علي" />
+
+    <!-- Google Fonts: IBM Plex Sans Arabic + Alexandria + Cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Alexandria:wght@400;600;700;800&family=Cairo:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+
+    <!-- FontAwesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Core Stylesheet & Contact Specific Stylesheet -->
+    <link rel="stylesheet" href="index.css?v=6" />
+    <link rel="stylesheet" href="contact.css?v=2" />
+  </head>
+  <body>
+    <!-- ==================== SITE HEADER / NAVBAR ==================== -->
+    <header class="site-header" id="header">
+      <div class="container">
+        <nav class="navbar">
+          <!-- Logo -->
+          <a href="index.html" class="brand-logo" id="brandLogo">
+            <img
+              src="assets/logo.png"
+              alt="د. عفاف بن علي - Dr. Afaf Ben Ali"
+            />
+          </a>
+
+          <!-- Desktop Navigation Menu -->
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="index.html#home" class="nav-link">الرئيسية</a></li>
+            <li><a href="about.html" class="nav-link">من أنا</a></li>
+            <li><a href="index.html#services" class="nav-link">الخدمات</a></li>
+            <li><a href="index.html#faq" class="nav-link">الأسئلة الشائعة</a></li>
+            <li><a href="contact.html" class="nav-link active">تواصل معي</a></li>
+            <li class="mobile-only-link"><a href="challenge.html" class="btn-pink-pill nav-link">ابدأ التحدي</a></li>
+          </ul>
+
+          <!-- Header CTA Button -->
+          <div class="nav-cta">
+            <a href="challenge.html" class="btn-pink-pill" id="headerCtaBtn"
+              >ابدأ التحدي</a
+            >
+          </div>
+
+          <!-- Mobile Toggle Button -->
+          <button class="mobile-toggle" id="mobileToggle" aria-label="القائمة">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ==================== MAIN CONTENT: CONTACT PAGE ==================== -->
+    <main class="contact-page-main">
+      <div class="container">
+        <!-- HERO / FORM SECTION (2 COLUMNS: FORM ON RIGHT, VISUAL ON LEFT) -->
+        <section class="contact-hero-grid">
+          <!-- Form Column (First in DOM = RIGHT SIDE on screen in RTL) -->
+          <div class="contact-form-card">
+            <!-- Top Pill Badge -->
+            <div class="contact-badge-pill">
+              <i class="fa-solid fa-phone"></i>
+              <span>تواصل معنا</span>
+            </div>
+
+            <!-- Title -->
+            <h1 class="contact-form-title">
+              ابدأ رحلتك نحو السعادة خلال 7 أيام
+            </h1>
+
+            <!-- Subtitle note -->
+            <p class="contact-form-subtitle">
+              لا تتردد في ارسال الرسالة لن يتم نشر عنوان بريدك الإلكتروني.
+              الخانات الإلزامية محددة ب<span>*</span>
+            </p>
+
+            <!-- Form Fields -->
+            <form class="contact-form" id="contactForm">
+              <div class="contact-input-wrap">
+                <input
+                  type="text"
+                  class="contact-input"
+                  placeholder="*الإسم بالكامل"
+                  required
+                  id="contactName"
+                />
+              </div>
+
+              <div class="contact-input-wrap">
+                <input
+                  type="email"
+                  class="contact-input"
+                  placeholder="*بريدك الإلكتروني"
+                  required
+                  id="contactEmail"
+                />
+              </div>
+
+              <div class="contact-input-wrap">
+                <input
+                  type="tel"
+                  class="contact-input"
+                  placeholder="*رقم الهاتف"
+                  required
+                  id="contactPhone"
+                />
+              </div>
+
+              <div class="contact-input-wrap">
+                <input
+                  type="text"
+                  class="contact-input"
+                  placeholder="*الموضوع"
+                  required
+                  id="contactSubject"
+                />
+              </div>
+
+              <div class="contact-input-wrap">
+                <textarea
+                  class="contact-textarea"
+                  placeholder="*رسالتك .."
+                  rows="5"
+                  required
+                  id="contactMessage"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="contact-submit-btn"
+                id="contactSubmitBtn"
+              >
+                تواصــــــــــــــــــل الآن
+              </button>
+
+              <!-- Success Alert Message -->
+              <div class="contact-success-alert" id="contactSuccessAlert">
+                <i class="fa-solid fa-circle-check"></i> تم إرسال رسالتك بنجاح!
+                سنتواصل معكِ في أقرب وقت.
+              </div>
+            </form>
+          </div>
+
+          <!-- Visual Column (Second in DOM = LEFT SIDE on screen in RTL) -->
+          <div class="contact-visual-card about-bio-visual">
+            <img
+              src="assets/images/about_person_new.png"
+              alt="الدكتورة عفاف بن علي - تواصل معنا"
+              class="bio-person-img"
+            />
+          </div>
+        </section>
+
+        <!-- 3 FEATURE CARDS / BENTO GRID SECTION (WITH USER PROVIDED IMAGES) -->
+        <section class="contact-features-section">
+          <div class="contact-features-grid">
+            <!-- Card 1 (Right in RTL) -->
+            <div class="feature-card-item">
+              <div class="feature-icon-wrapper">
+                <img
+                  src="assets/images/user_icon_consultation.png"
+                  alt="استشارة مجانية"
+                  class="feature-icon-img"
+                />
+              </div>
+            </div>
+
+            <!-- Card 2 (Middle in RTL) -->
+            <div class="feature-card-item">
+              <div class="feature-icon-wrapper">
+                <img
+                  src="assets/images/user_icon_steps.png"
+                  alt="خطوات بسيطة"
+                  class="feature-icon-img"
+                />
+              </div>
+            </div>
+
+            <!-- Card 3 (Left in RTL) -->
+            <div class="feature-card-item">
+              <div class="feature-icon-wrapper">
+                <img
+                  src="assets/images/user_icon_results.png"
+                  alt="نتائج ملموسة"
+                  class="feature-icon-img"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- ==================== FOOTER SECTION ==================== -->
+    <footer class="site-footer" id="contact">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Col 1: Brand & Bio -->
+          <div class="footer-brand">
+            <img
+              src="assets/logo.png"
+              alt="د. عفاف بن علي"
+              class="footer-logo"
+            />
+            <p class="footer-desc">
+              منصة متخصصة في الصحة النفسية وتطوير الذات، تساعدك على تحقيق
+              التوازن والنمو من خلال جلسات وبرامج علمية وعملية.
+            </p>
+
+            <!-- Social Links -->
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Facebook"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-link" aria-label="Twitter"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a href="#" class="social-link" aria-label="Instagram"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="#" class="social-link" aria-label="YouTube"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Col 2: Useful Links -->
+          <div class="footer-column">
+            <h3 class="footer-heading">روابط سريعة</h3>
+            <ul class="footer-menu">
+              <li><a href="index.html#home">الصفحة الرئيسية</a></li>
+              <li><a href="about.html">من أنا</a></li>
+              <li><a href="index.html#services">الخدمات</a></li>
+              <li><a href="challenge.html">ابدأ التحدي</a></li>
+              <li><a href="index.html#faq">الأسئلة الشائعة</a></li>
+              <li><a href="contact.html">تواصل معي</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Quick Links -->
+          <div class="footer-column">
+            <h3 class="footer-heading">روابط سريعة</h3>
+            <ul class="footer-menu">
+              <li><a href="#privacy">سياسة الخصوصية</a></li>
+              <li><a href="#terms">الشروط والأحكام</a></li>
+              <li><a href="contact.html">اتصل بنا</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Newsletter Box -->
+          <div class="footer-column">
+            <h3 class="footer-heading">النشرة البريدية</h3>
+            <p class="newsletter-text">
+              اشترك في نشرتنا البريدية للحصول علي آخر العروض والمنتجات الجديدة
+            </p>
+
+            <form class="newsletter-form" id="newsletterForm">
+              <input
+                type="email"
+                placeholder="البريد الإلكتروني"
+                class="input-pill"
+                required
+                id="newsletterInput"
+              />
+              <button type="submit" class="btn-sub" id="newsletterSubmitBtn">
+                اشتراك
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Bottom Bar & Payment Badges -->
+        <div class="footer-bottom">
+          <div class="copyright">جميع الحقوق محفوظة @ لد.عفاف بن علي</div>
+
+          <div class="payment-badges">
+            <img
+              src="assets/images/payment_badges.png"
+              alt="وسائل الدفع: تابي، تمارا، مدى، السجل التجاري"
+              class="payment-img"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ==================== FLOATING WHATSAPP BUTTON ==================== -->
+    <a
+      href="https://wa.me/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="whatsapp-float"
+      aria-label="تواصل عبر واتساب"
+      id="whatsappBtn"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Core Javascript -->
+    <script src="app.js"></script>
+
+    <!-- Interactive Form Handling -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const form = document.getElementById("contactForm");
+        const alertBox = document.getElementById("contactSuccessAlert");
+
+        if (form) {
+          form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            if (alertBox) {
+              alertBox.style.display = "block";
+              form.reset();
+              setTimeout(() => {
+                alertBox.style.display = "none";
+              }, 6000);
+            }
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
